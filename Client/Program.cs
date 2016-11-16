@@ -16,6 +16,7 @@ namespace Client
     {
         static void Main(string[] args)
         {
+            //Please uncommnet and commnet out demos you want to see
             #region Adapter Demo
             //AdapterDemo();
             #endregion
