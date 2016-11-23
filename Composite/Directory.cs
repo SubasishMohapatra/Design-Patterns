@@ -6,13 +6,12 @@ using System.Threading.Tasks;
 
 namespace Composite
 {
-    public class Directory : BaseFile
+    public class Directory:BaseFile
     {
         List<BaseFile> files = new List<BaseFile>();
-
-        public Directory(string name) : base(name)
+        public Directory(string name):base(name)
         {
-
+            
         }
 
         public void Add(BaseFile baseFile)
@@ -25,7 +24,7 @@ namespace Composite
             files.Remove(baseFile);
         }
 
-        public override void Display(int depth = 0)
+        public override void Display(int depth=0)
         {
             base.Display(depth);
             files.ForEach(x => x.Display(depth + 1));

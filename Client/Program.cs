@@ -17,7 +17,7 @@ namespace Client
     {
         static void Main(string[] args)
         {
-            //Please uncommnet and commnet out demos you want to see
+            //Please uncomment and comment out demos you want to see
             #region Adapter Demo
             //AdapterDemo();
             #endregion
@@ -50,22 +50,19 @@ namespace Client
 
             #endregion
 
-            #region Composite Demo
+            #region Composite
 
-            Drive drive = new Drive("Drive");
+            var drive = new Drive("Drive");
             var a = new Directory("A");
             var b = new Directory("B");
             var c = new Directory("C");
             var d = new Directory("D");
-
             a.Add(new File("A1"));
             a.Add(new File("A2"));
-            b.Add(new File("B1"));
-            b.Add(a);
+            b.Add(new File("B1"));            
             c.Add(b);
-            d.Add(new File("D1"));
-            d.Add(new File("D2"));
-            drive.Add(c);
+            d.Add(c);
+            d.Add(a);
             drive.Add(d);
             drive.Display();
 

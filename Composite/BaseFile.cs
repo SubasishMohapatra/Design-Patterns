@@ -12,11 +12,12 @@ namespace Composite
         {
             this.Name = name;
         }
-        protected string Name { get; set; }
 
-        public virtual void Display(int depth=0)
+        public string Name { get; set; }
+
+        public virtual void Display(int depth = 0)
         {
-            Console.WriteLine(new string('-',depth)+ this.Name);
+            Console.WriteLine(new string('-', depth) + this.Name);
         }
     }
 }

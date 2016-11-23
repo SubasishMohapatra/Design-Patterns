@@ -7,8 +7,8 @@
     <ProjectGuid>{56A77695-DC19-46DC-A3FC-DC0594E51B6C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AbstarctFactoryRevisited</RootNamespace>
-    <AssemblyName>AbstarctFactoryRevisited</AssemblyName>
+    <RootNamespace>AbstractFactoryRevisited</RootNamespace>
+    <AssemblyName>AbstractFactoryRevisited</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

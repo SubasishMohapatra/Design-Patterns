@@ -6,11 +6,13 @@ using System.Threading.Tasks;
 
 namespace Composite
 {
-    public class File: BaseFile
-    {
+    public class File : BaseFile
+    { 
         public File(string name):base(name)
         {
-
+            
         }
+
+        
     }
 }
