@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visitor", "Visitor\Visitor.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{72204F4E-6D4F-49FD-A053-92AAB713F74A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite", "Composite\Composite.csproj", "{EDD588C6-434E-4494-8908-A7A088C6B479}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{72204F4E-6D4F-49FD-A053-92AAB713F74A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72204F4E-6D4F-49FD-A053-92AAB713F74A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72204F4E-6D4F-49FD-A053-92AAB713F74A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDD588C6-434E-4494-8908-A7A088C6B479}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDD588C6-434E-4494-8908-A7A088C6B479}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDD588C6-434E-4494-8908-A7A088C6B479}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDD588C6-434E-4494-8908-A7A088C6B479}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

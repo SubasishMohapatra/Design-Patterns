@@ -4,16 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{72204F4E-6D4F-49FD-A053-92AAB713F74A}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{EDD588C6-434E-4494-8908-A7A088C6B479}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Client</RootNamespace>
-    <AssemblyName>Client</AssemblyName>
+    <RootNamespace>Composite</RootNamespace>
+    <AssemblyName>Composite</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,7 +22,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -42,38 +40,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="Drive.cs" />
+    <Compile Include="File.cs" />
+    <Compile Include="Directory.cs" />
+    <Compile Include="BaseFile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\AbstarctFactoryRevisited\AbstractFactoryRevisited.csproj">
-      <Project>{56a77695-dc19-46dc-a3fc-dc0594e51b6c}</Project>
-      <Name>AbstractFactoryRevisited</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\AbstractFactory\AbstractFactory.csproj">
-      <Project>{4d9816ca-3586-40a4-9a91-254f3a9e89d9}</Project>
-      <Name>AbstractFactory</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Adapter\Adapter.csproj">
-      <Project>{96ed5aa0-d3d5-4577-a465-a10e77eb4f61}</Project>
-      <Name>Adapter</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Composite\Composite.csproj">
-      <Project>{edd588c6-434e-4494-8908-a7a088c6b479}</Project>
-      <Name>Composite</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Decorator\Decorator.csproj">
-      <Project>{bd2338d7-6a47-4c41-b0f7-5481e63399cb}</Project>
-      <Name>Decorator</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Observer\Observer.csproj">
-      <Project>{643c69ef-2e47-4484-979f-25d270c5645b}</Project>
-      <Name>Observer</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Visitor\Visitor.csproj">
-      <Project>{1d67ec00-40a0-4b05-913f-31442d03a363}</Project>
-      <Name>Visitor</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

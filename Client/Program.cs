@@ -1,6 +1,7 @@
 ﻿using AbstractFactory;
 using AbstractFactoryRevisited;
 using Adapter;
+using Composite;
 using Decorator;
 using Observer;
 using System;
@@ -44,7 +45,28 @@ namespace Client
 
             #region Visitor Demo
 
-            Visitor();
+            //Visitor();
+
+            #endregion
+
+            #region Composite Demo
+
+            Drive drive = new Drive("Drive");
+            var a = new Directory("A");
+            var b = new Directory("B");
+            var c = new Directory("C");
+            var d = new Directory("D");
+
+            a.Add(new File("A1"));
+            a.Add(new File("A2"));
+            b.Add(new File("B1"));
+            b.Add(a);
+            c.Add(b);
+            d.Add(new File("D1"));
+            d.Add(new File("D2"));
+            drive.Add(c);
+            drive.Add(d);
+            drive.Display();
 
             #endregion
 
