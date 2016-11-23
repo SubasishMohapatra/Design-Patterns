@@ -46,7 +46,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AbstarctFactoryRevisited\AbstractFactoryRevisited.csproj">
+    <ProjectReference Include="..\AbstractFactoryRevisited\AbstractFactoryRevisited.csproj">
       <Project>{56a77695-dc19-46dc-a3fc-dc0594e51b6c}</Project>
       <Name>AbstractFactoryRevisited</Name>
     </ProjectReference>
@@ -57,6 +57,10 @@
     <ProjectReference Include="..\Adapter\Adapter.csproj">
       <Project>{96ed5aa0-d3d5-4577-a465-a10e77eb4f61}</Project>
       <Name>Adapter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Composite\Composite.csproj">
+      <Project>{93559221-5594-412e-a62a-31a496efb506}</Project>
+      <Name>Composite</Name>
     </ProjectReference>
     <ProjectReference Include="..\Decorator\Decorator.csproj">
       <Project>{bd2338d7-6a47-4c41-b0f7-5481e63399cb}</Project>

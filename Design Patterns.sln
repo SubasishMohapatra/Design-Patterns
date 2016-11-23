@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Express 14 for Windows Desktop
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactoryRevisited", "AbstarctFactoryRevisited\AbstractFactoryRevisited.csproj", "{56A77695-DC19-46DC-A3FC-DC0594E51B6C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactoryRevisited", "AbstractFactoryRevisited\AbstractFactoryRevisited.csproj", "{56A77695-DC19-46DC-A3FC-DC0594E51B6C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AbstractFactory", "AbstractFactory\AbstractFactory.csproj", "{4D9816CA-3586-40A4-9A91-254F3A9E89D9}"
 EndProject
@@ -16,6 +16,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visitor", "Visitor\Visitor.csproj", "{1D67EC00-40A0-4B05-913F-31442D03A363}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Client", "Client\Client.csproj", "{72204F4E-6D4F-49FD-A053-92AAB713F74A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Composite", "Composite\Composite.csproj", "{93559221-5594-412E-A62A-31A496EFB506}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{72204F4E-6D4F-49FD-A053-92AAB713F74A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{72204F4E-6D4F-49FD-A053-92AAB713F74A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{72204F4E-6D4F-49FD-A053-92AAB713F74A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{93559221-5594-412E-A62A-31A496EFB506}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{93559221-5594-412E-A62A-31A496EFB506}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{93559221-5594-412E-A62A-31A496EFB506}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{93559221-5594-412E-A62A-31A496EFB506}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
