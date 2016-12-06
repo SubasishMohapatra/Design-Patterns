@@ -3,6 +3,7 @@ using AbstractFactoryRevisited;
 using Adapter;
 using Composite;
 using Decorator;
+using Facade;
 using Observer;
 using System;
 using System.Collections.Generic;
@@ -52,6 +53,30 @@ namespace Client
 
             #region Composite
 
+            //Composite();
+
+            #endregion
+
+            #region Facade Demo
+
+            Facade();
+
+            #endregion
+
+            Console.ReadLine();
+        }
+
+        private static void Facade()
+        {
+            var candidate = new Candidate();
+            var interview = new Interview();
+            interview.ScreenCandidate(candidate);
+
+            Console.WriteLine("Candidate {0}", interview.IsCleared ? "cleared" : "could not clear");
+        }
+
+        private static void Composite()
+        {
             var drive = new Drive("Drive");
             var a = new Directory("A");
             var b = new Directory("B");
@@ -59,16 +84,12 @@ namespace Client
             var d = new Directory("D");
             a.Add(new File("A1"));
             a.Add(new File("A2"));
-            b.Add(new File("B1"));            
+            b.Add(new File("B1"));
             c.Add(b);
             d.Add(c);
             d.Add(a);
             drive.Add(d);
             drive.Display();
-
-            #endregion
-
-            Console.ReadLine();
         }
 
         private static void Visitor()
