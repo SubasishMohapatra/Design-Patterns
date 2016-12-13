@@ -1,6 +1,7 @@
 ﻿using AbstractFactory;
 using AbstractFactoryRevisited;
 using Adapter;
+using Chain_Of_Responsibility;
 using Composite;
 using Decorator;
 using Facade;
@@ -59,11 +60,31 @@ namespace Client
 
             #region Facade Demo
 
-            Facade();
+            //Facade();
+
+            #endregion
+
+            #region Chain of responsibility
+
+            ChainOfResponsibility();
 
             #endregion
 
             Console.ReadLine();
+        }
+
+        private static void ChainOfResponsibility()
+        {
+            var project = new Project();
+            var pm = new ProjectManager();
+            var pl = new ProjectLead();
+            var developer = new Developer();
+            var tester = new Tester();
+
+            pm.Sucessor = pl;
+            pl.Sucessor = developer;
+            developer.Sucessor = tester;
+            pm.DoJob(project);
         }
 
         private static void Facade()
