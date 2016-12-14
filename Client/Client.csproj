@@ -58,6 +58,10 @@
       <Project>{96ed5aa0-d3d5-4577-a465-a10e77eb4f61}</Project>
       <Name>Adapter</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Builder\Builder.csproj">
+      <Project>{e72d93ad-8232-4d75-8c47-7b85a67c508a}</Project>
+      <Name>Builder</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Chain Of Responsibility\Chain Of Responsibility.csproj">
       <Project>{b551ebed-5035-46cb-abf2-b85cf9860c18}</Project>
       <Name>Chain Of Responsibility</Name>
