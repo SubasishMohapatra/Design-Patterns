@@ -1,6 +1,7 @@
 ﻿using AbstractFactory;
 using AbstractFactoryRevisited;
 using Adapter;
+using Builder;
 using Chain_Of_Responsibility;
 using Composite;
 using Decorator;
@@ -64,13 +65,25 @@ namespace Client
 
             #endregion
 
-            #region Chain of responsibility
+            #region Chain of responsibility Demo
 
-            ChainOfResponsibility();
+            //ChainOfResponsibility();
+
+            #endregion
+
+            #region Builder Demo
+
+            Builder();
 
             #endregion
 
             Console.ReadLine();
+        }
+
+        private static void Builder()
+        {
+            var computer = new Computer();
+            computer.Build("Dell", "Lenovo", "HP", "Intel");
         }
 
         private static void ChainOfResponsibility()
