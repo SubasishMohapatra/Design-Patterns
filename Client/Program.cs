@@ -7,6 +7,7 @@ using Composite;
 using Decorator;
 using Facade;
 using Observer;
+using State;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -73,11 +74,66 @@ namespace Client
 
             #region Builder Demo
 
-            Builder();
+            //Builder();
+
+            #endregion
+
+            #region State Demo
+
+            State();
 
             #endregion
 
             Console.ReadLine();
+        }
+
+        private static void State()
+        {
+            #region Uber example
+
+            Uber uberApp = new Uber();
+            uberApp.Book();
+            uberApp.Book();
+            uberApp.Book();
+            uberApp.Book();
+
+            uberApp.StartTrip(1);
+            uberApp.StartTrip(2);
+            uberApp.RideComplete(1);
+            uberApp.RideComplete(2);
+            uberApp.Cancelled(3);
+            uberApp.Cancelled(4);
+
+            uberApp.Cancelled(1);
+            uberApp.StartTrip(1);
+
+            uberApp.Book();
+            uberApp.Book();
+            uberApp.Book();
+            uberApp.Book();
+            uberApp.Book();
+            uberApp.Book();
+            uberApp.Book();
+            uberApp.Book();
+            uberApp.Book();
+            uberApp.Book();
+
+            uberApp.Book();//No cabs left
+
+            #endregion
+
+            #region Sample Object
+
+            //SomeObject someObject = new SomeObject();
+            //Console.WriteLine("Create new object");
+            //someObject.Submit(); //New
+            //Console.WriteLine("Edit changes");
+            //someObject.Submit(); //Edit mode
+            //Console.WriteLine("Try changing a readonly object");
+            //someObject.ChangeState(new ReadOnlyState());
+            //someObject.Submit(); //Read only mode
+
+            #endregion
         }
 
         private static void Builder()
