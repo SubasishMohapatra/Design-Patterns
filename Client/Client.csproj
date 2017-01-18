@@ -82,6 +82,10 @@
       <Project>{643c69ef-2e47-4484-979f-25d270c5645b}</Project>
       <Name>Observer</Name>
     </ProjectReference>
+    <ProjectReference Include="..\State\State.csproj">
+      <Project>{8da85a7f-a27b-4e4a-b4f6-6230948a058b}</Project>
+      <Name>State</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Visitor\Visitor.csproj">
       <Project>{1d67ec00-40a0-4b05-913f-31442d03a363}</Project>
       <Name>Visitor</Name>
