@@ -8,6 +8,7 @@ using Decorator;
 using Facade;
 using Observer;
 using State;
+using Strategy;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -80,11 +81,25 @@ namespace Client
 
             #region State Demo
 
-            State();
+            //State();
+
+            #endregion
+
+            #region Strategy Demo
+
+            Strategy();
 
             #endregion
 
             Console.ReadLine();
+        }
+
+        private static void Strategy()
+        {
+            Store store = new Store();
+            store.Pay(new PayTM(), 200);
+            store.Pay(new FreeCharge(), 100);
+            store.Pay(new MobiKwik(), 300);
         }
 
         private static void State()

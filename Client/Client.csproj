@@ -86,6 +86,10 @@
       <Project>{8da85a7f-a27b-4e4a-b4f6-6230948a058b}</Project>
       <Name>State</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Strategy\Strategy.csproj">
+      <Project>{e61e6196-accb-4263-9888-1fe873832024}</Project>
+      <Name>Strategy</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Visitor\Visitor.csproj">
       <Project>{1d67ec00-40a0-4b05-913f-31442d03a363}</Project>
       <Name>Visitor</Name>
